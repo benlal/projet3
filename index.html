@@ -3,23 +3,116 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="stylesheet" href="style.scss" />
+		<link rel="stylesheet" href="public/css/style.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-		<title></title>
+		<title>Ohmyfood!</title>
 	</head>
 	<body>
         <header>
-
-            <nav>
-                <ul>
-                    <li><a href=""></a></li>
-                </ul>
-            </nav>
+			<img src="images/logo/ohmyfood.png" id="logo" alt="Logo de Ohmyfood!" />
 		</header>
         <main>
-
+			<div id="location">
+				<i class="fa-solid fa-location-dot"></i>
+				<p>Paris, Belleville</p>
+			</div>
+			<section id="reservation">
+				<h1>Réservez le menu qui vous convient</h1>
+				<p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+				<button>Explorer nos restaurants</button>
+			</section>
+			<section id="fonctionnement">
+				<h2>Fonctionnement</h2>
+				<div id="fonctionnement__list">
+					<div class="step">
+						<p class="step__number">1</p>
+						<i class="fa-solid fa-mobile-screen-button"></i>
+						<p class="step__label">Choisissez un restaurant</p>
+					</div>
+					<div class="step">
+						<p class="step__number">2</p>
+						<i class="fa-solid fa-list"></i>
+						<p class="step__label">Composez votre menu</p>
+					</div>
+					<div class="step step--selected">
+						<p class="step__number">3</p>
+						<i class="fa-solid fa-store"></i>
+						<p class="step__label">Dégustez au restaurant</p>
+					</div>
+				</div>
+			</section>
+			<section id="restaurants">
+				<div id="restaurants__content">
+					<h2>Restaurants</h2>
+					<div id="restaurants__list">
+						<div class="restaurant">
+							<div class="restaurant__figure">
+								<img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" id="restaurant__image" alt="Photo de La palette du goût" />
+								<p class="restaurant__new">Nouveau</p>
+							</div>
+							<div class="restaurant__description">
+								<div class="restaurant__name">
+									<h3>La palette du goût</h3>
+									<p>Ménilmontant</p>
+								</div>
+								<i class="fa-solid fa-heart"></i>
+							</div>
+						</div>
+						<div class="restaurant">
+							<div class="restaurant__figure">
+								<img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" id="restaurant__image" alt="Photo de La palette du goût" />
+							</div>
+							<div class="restaurant__description">
+								<div class="restaurant__name">
+									<h3>La palette du goût</h3>
+									<p>Ménilmontant</p>
+								</div>
+								<i class="fa-solid fa-heart"></i>
+							</div>
+						</div>
+						<div class="restaurant">
+							<div class="restaurant__figure">
+								<img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" id="restaurant__image" alt="Photo de La palette du goût" />
+							</div>
+							<div class="restaurant__description">
+								<div class="restaurant__name">
+									<h3>La palette du goût</h3>
+									<p>Ménilmontant</p>
+								</div>
+								<i class="fa-solid fa-heart"></i>
+							</div>
+						</div>
+						<div class="restaurant">
+							<div class="restaurant__figure">
+								<img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" id="restaurant__image" alt="Photo de La palette du goût" />
+							</div>
+							<div class="restaurant__description">
+								<div class="restaurant__name">
+									<h3>La palette du goût</h3>
+									<p>Ménilmontant</p>
+								</div>
+								<i class="fa-solid fa-heart"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
         </main>
 		<footer>
-
+			<div id="footer__content">
+				<img src="images/logo/ohmyfood.png" id="logo--white" alt="Logo de Ohmyfood!" />
+				<div id="footer__list">
+					<div class="footer__line">
+						<i class="fa-solid fa-utensils"></i>
+						<p>Proposer un restaurant</p>
+					</div>
+					<div class="footer__line">
+						<i class="fa-solid fa-handshake-angle"></i>
+						<p>Devenir partenaire</p>
+					</div>
+					<p>Mentions légales</p>
+					<p>Contact</p>
+				</div>
+			</div>
 		</footer>
 	</body>

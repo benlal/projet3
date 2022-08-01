@@ -1,0 +1,19 @@
+{
+  "name": "projet3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/style.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benlal/projet3.git"
+  },
+  "author": "Benjamin Lallemand",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benlal/projet3/issues"
+  },
+  "homepage": "https://github.com/benlal/projet3#readme"
+}

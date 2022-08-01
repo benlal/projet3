@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@100;300;500;700;900&display=swap');
+
+*
+{
+	font-family: Roboto;
+    font-size: 15px;
+}
+
+h1, h2
+{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+body
+{
+    margin: 0;
+}
+
+#reservation, #fonctionnement, #restaurants__content, #footer__content
+{
+    max-width: 90%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+header
+{
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#logo, #logo--white
+{
+    max-height: 25px;
+}
+
+#location
+{
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p 
+    {
+        margin-left: 10px;
+    }
+}
+
+
+#reservation
+{
+    text-align: center;
+    p 
+    {
+        font-size: 18px;
+        font-weight: 300;
+    }
+}
+
+
+button
+{
+    border: none;
+    background: linear-gradient(#ff79da, #9356dc);
+    padding: 15px;
+    border-radius: 30px;
+    font-weight: 400;
+    color: white;
+}
+
+
+.step
+{
+    display: flex;
+    align-items: center;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    padding: 10px;
+    .fa-solid
+    {
+        font-size: 18px;   
+        color: darken($color: #f2f2f2, $amount: 50%);
+    }
+    &__label 
+    {
+        font-weight: 700;
+        margin-left: 20px;
+    }
+    &__number
+    {
+        color: white;
+        font-weight: 400;
+        height: 25px;
+        width: 25px;
+        background-color: #9356dc;
+        border-radius: 20px;
+        text-align: center;
+        vertical-align: middle;
+        position: relative;
+        right: 20px;
+    }
+
+}
+
+.step--selected
+{
+    background-color: lighten($color: #9356dc, $amount: 35%);
+    .fa-solid
+    {
+        color: #9356dc;
+    }
+}
+
+
+#restaurants
+{
+    background-color: #f2f2f2;
+}
+
+
+.restaurant
+{
+    margin-bottom: 10px;
+    
+    border-radius: 15px;
+    &__figure
+    {
+        display: flex;
+        img
+        {
+            max-width: 100%;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+    }
+    &__new
+    {
+        background-color: #99E2D0;
+        padding: 10px;
+        box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.3);
+        color: darken($color: #99E2D0, $amount: 50%);
+    }
+    &__description
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        padding: 10px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        h3, p 
+        {
+            margin: 5px 0;
+        }
+        p 
+        {
+            font-weight: 300;
+        }
+        .fa-heart
+        {
+            font-size: 24px;
+            margin: 10px;
+        }
+    }
+}
+
+
+footer
+{
+    background-color: darken($color: #f2f2f2, $amount: 75%);
+    p 
+    {
+        color: white;
+    }
+}
+
+#footer__content
+{
+    p 
+    {
+        margin: 5px 0;
+        font-weight: 300;
+    }
+}
+
+#footer__list
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.footer__line
+{
+    display: flex;
+    align-items: center;
+    .fa-solid 
+    {
+        margin-right: 10px;
+        color: white;
+    }
+}
+
+#logo--white
+{
+    filter: invert(100%);
+}
