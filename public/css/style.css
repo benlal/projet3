@@ -28,6 +28,11 @@ header {
   position: relative;
 }
 
+.fa-arrow-left {
+  position: absolute;
+  left: 5%;
+}
+
 #logo, #logo--white {
   max-height: 25px;
 }
@@ -180,6 +185,24 @@ footer {
 
 #logo--white {
   filter: invert(100%);
+}
+
+#menu__figure {
+  height: 300px;
+}
+
+#menu__photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#menu__body {
+  text-align: center;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  height: 500px;
+  background-color: #f2f2f2;
 }
 
 /*# sourceMappingURL=style.css.map */
