@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@100;300;500;700;900&display=swap");
+@font-face {
+  font-family: "shrikhandregular";
+  src: url("shrikhand-regular-webfont.woff2") format("woff2"), url("shrikhand-regular-webfont.woff") format("woff"), url("shrikhand-regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 * {
   font-family: Roboto;
   font-size: 15px;
@@ -198,11 +204,32 @@ footer {
 }
 
 #menu__body {
-  text-align: center;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   height: 500px;
   background-color: #f2f2f2;
+}
+
+#menu__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#menu__title h1 {
+  font-family: shrikhandregular;
+}
+#menu__title .fa-heart {
+  font-size: 20px;
+}
+
+#menu__title, #menu__entrees {
+  width: 90%;
+  margin: auto;
+}
+
+#menu__entrees h2 {
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=style.css.map */
