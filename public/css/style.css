@@ -206,20 +206,22 @@ footer {
 #menu__body {
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  height: 500px;
   background-color: #f2f2f2;
+}
+#menu__body h1, #menu__body h2 {
+  margin: 10px 0;
+}
+#menu__body h1 {
+  font-family: shrikhandregular;
+}
+#menu__body .fa-heart {
+  font-size: 20px;
 }
 
 #menu__title {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-#menu__title h1 {
-  font-family: shrikhandregular;
-}
-#menu__title .fa-heart {
-  font-size: 20px;
 }
 
 #menu__title, #menu__entrees {
@@ -230,6 +232,36 @@ footer {
 #menu__entrees h2 {
   font-weight: 300;
   text-transform: uppercase;
+  font-size: 18px;
+}
+
+.underline {
+  border-bottom: 3px solid #99E2D0;
+  max-width: 40px;
+  height: 3px;
+}
+
+.meal {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 15px;
+  margin: 10px 0;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.meal h3, .meal p {
+  margin: 5px 0;
+}
+.meal h3, .meal .meal__price {
+  font-size: 18px;
+}
+.meal p {
+  font-weight: 300;
+}
+.meal .meal__price {
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=style.css.map */
