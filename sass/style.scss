@@ -205,12 +205,12 @@ button {
             &:hover {
                 font-weight: 900;
                 cursor: pointer;
-
+                background: $gradient;
                 background-clip: text;
                 -webkit-background-clip: text;
                 color: transparent;
                 -webkit-text-fill-color: $gradient;
-                background: $gradient;
+                
 
 
             }
@@ -317,10 +317,6 @@ footer {
 }
 
 .meal {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding: 15px;
     margin: 10px 0;
     background-color: white;
     border-radius: 15px;
@@ -328,17 +324,60 @@ footer {
     h3, p {
         margin: 5px 0;
     }
-    h3, .meal__price {
+    h3 {
         font-size: 18px;
     }
     p {
         font-weight: 300;
     }
-    .meal__price
-    {
+
+}
+
+.meal__description {
+    padding: 15px;
+}
+
+.meal__price {
+    align-items: flex-end;
+    padding: 15px;
+    padding-top: 38px;
+    width: 10%;
+    p {
         font-weight: 700;
+        font-size: 18px;
     }
 }
+
+.meal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.meal__description {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+    width: 65%;
+}
+
+.meal__checkbox {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $color3;
+    color: white;
+    height: 85px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    .fa-circle-check {
+        font-size: 24px;
+    }
+    
+}
+
 
 @media screen and (min-width: 992px) {
     #fonctionnement__list {
@@ -353,7 +392,7 @@ footer {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        .restaurant, a
+        a
         {
             width: 48%;
         }
@@ -363,7 +402,7 @@ footer {
         display: flex;
         justify-content: space-between;
         .meal {
-            width: 28%;
+            width: 30%;
         }
     }
 }

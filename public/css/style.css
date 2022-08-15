@@ -187,11 +187,11 @@ button:hover {
 .restaurant__description .fa-heart:hover {
   font-weight: 900;
   cursor: pointer;
+  background: linear-gradient(#FF79DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   -webkit-text-fill-color: linear-gradient(#FF79DA, #9356DC);
-  background: linear-gradient(#FF79DA, #9356DC);
 }
 
 footer {
@@ -289,10 +289,6 @@ footer p, footer a {
 }
 
 .meal {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding: 15px;
   margin: 10px 0;
   background-color: white;
   border-radius: 15px;
@@ -301,14 +297,54 @@ footer p, footer a {
 .meal h3, .meal p {
   margin: 5px 0;
 }
-.meal h3, .meal .meal__price {
+.meal h3 {
   font-size: 18px;
 }
 .meal p {
   font-weight: 300;
 }
-.meal .meal__price {
+
+.meal__description {
+  padding: 15px;
+}
+
+.meal__price {
+  align-items: flex-end;
+  padding: 15px;
+  padding-top: 38px;
+  width: 10%;
+}
+.meal__price p {
   font-weight: 700;
+  font-size: 18px;
+}
+
+.meal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.meal__description {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 65%;
+}
+
+.meal__checkbox {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #99E2D0;
+  color: white;
+  height: 85px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.meal__checkbox .fa-circle-check {
+  font-size: 24px;
 }
 
 @media screen and (min-width: 992px) {
@@ -324,7 +360,7 @@ footer p, footer a {
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  #restaurants__list .restaurant, #restaurants__list a {
+  #restaurants__list a {
     width: 48%;
   }
   .menu__meals {
@@ -332,7 +368,7 @@ footer p, footer a {
     justify-content: space-between;
   }
   .menu__meals .meal {
-    width: 28%;
+    width: 30%;
   }
 }
 
