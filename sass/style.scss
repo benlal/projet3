@@ -317,6 +317,9 @@ footer {
 }
 
 .meal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 10px 0;
     background-color: white;
     border-radius: 15px;
@@ -333,9 +336,7 @@ footer {
 
 }
 
-.meal__description {
-    padding: 15px;
-}
+
 
 .meal__price {
     align-items: flex-end;
@@ -348,16 +349,16 @@ footer {
     }
 }
 
-.meal {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 
 .meal__description {
+    padding: 15px;
+    h3, p {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+    }
+    
 
     width: 65%;
 }

@@ -289,6 +289,9 @@ footer p, footer a {
 }
 
 .meal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 10px 0;
   background-color: white;
   border-radius: 15px;
@@ -304,10 +307,6 @@ footer p, footer a {
   font-weight: 300;
 }
 
-.meal__description {
-  padding: 15px;
-}
-
 .meal__price {
   align-items: flex-end;
   padding: 15px;
@@ -319,17 +318,14 @@ footer p, footer a {
   font-size: 18px;
 }
 
-.meal {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .meal__description {
+  padding: 15px;
+  width: 65%;
+}
+.meal__description h3, .meal__description p {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  width: 65%;
 }
 
 .meal__checkbox {
