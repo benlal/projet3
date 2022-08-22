@@ -348,10 +348,11 @@ footer p, footer a {
 }
 
 .meal__price {
+  display: flex;
   align-items: flex-end;
-  padding: 15px;
-  padding-top: 38px;
-  width: 10%;
+  justify-content: center;
+  height: 55px;
+  width: 15%;
 }
 .meal__price p {
   font-weight: 700;
@@ -359,8 +360,9 @@ footer p, footer a {
 }
 
 .meal__description {
-  padding: 15px;
-  width: 65%;
+  padding-left: 15px;
+  box-sizing: border-box;
+  width: 60%;
 }
 .meal__description h3, .meal__description p {
   text-overflow: ellipsis;
