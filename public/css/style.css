@@ -311,8 +311,7 @@ footer p, footer a {
   background-color: white;
   border-radius: 15px;
   box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.3);
-  animation-delay: 1s;
-  animation-duration: 10s;
+  animation-duration: 2s;
   animation-name: slidein;
 }
 .meal h3, .meal p {
@@ -330,14 +329,22 @@ footer p, footer a {
 
 @keyframes slidein {
   0% {
-    bottom: -60px;
+    translate: 0 30px;
     opacity: 0;
   }
   100% {
+    translate: 0 0;
     opacity: 100%;
-    bottom: 0;
   }
 }
+.meal--delay1 {
+  animation-delay: 2s;
+}
+
+.meal--delay2 {
+  animation-delay: 4s;
+}
+
 .meal__price {
   align-items: flex-end;
   padding: 15px;

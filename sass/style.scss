@@ -332,11 +332,6 @@ footer {
 }
 
 .meal {
-
-    // transform: translate(0, -60px);
-
-
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -356,22 +351,29 @@ footer {
     &:hover + .meal__checkbox {
         display: flex;
     }
-    animation-delay: 1s;
-    animation-duration: 10s;
+    animation-duration: 2s;
     animation-name: slidein;
 }
 
 
 @keyframes slidein {
     0% {
-        bottom: -60px;
+        translate: 0 30px;
         opacity: 0;
     }
     100% {
+        translate: 0 0;
         opacity: 100%;
-        bottom: 0;
     }
 
+}
+
+.meal--delay1 {
+    animation-delay: 2s;
+}
+
+.meal--delay2 {
+    animation-delay: 4s;
 }
 
 
