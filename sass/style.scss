@@ -202,6 +202,7 @@ button {
         .fa-heart {
             font-size: 24px;
             margin: 10px;
+
             &:hover {
                 font-weight: 900;
                 cursor: pointer;
@@ -210,7 +211,9 @@ button {
                 -webkit-background-clip: text;
                 color: transparent;
                 -webkit-text-fill-color: $gradient;
-                
+                transform-origin: bottom;
+
+
 
 
             }
@@ -351,7 +354,7 @@ footer {
     &:hover + .meal__checkbox {
         display: flex;
     }
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
     animation-name: slidein;
     opacity: 0;
@@ -370,11 +373,11 @@ footer {
 }
 
 .meal--delay1 {
-    animation-delay: 2s;
+    animation-delay: 1s;
 }
 
 .meal--delay2 {
-    animation-delay: 4s;
+    animation-delay: 2s;
 }
 
 
