@@ -192,7 +192,6 @@ button:hover {
   -webkit-background-clip: text;
   color: transparent;
   -webkit-text-fill-color: linear-gradient(#FF79DA, #9356DC);
-  transform-origin: bottom;
 }
 
 footer {
@@ -290,7 +289,7 @@ footer p, footer a {
 }
 
 .meal__checkbox {
-  width: 25%;
+  width: 0%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -302,16 +301,19 @@ footer p, footer a {
 }
 .meal__checkbox .fa-circle-check {
   font-size: 24px;
+  opacity: 0;
 }
 
 .meal {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: right;
+  height: 85px;
   margin: 10px 0;
   background-color: white;
   border-radius: 15px;
   box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  transform-origin: right;
   animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-name: slidein;
@@ -326,8 +328,18 @@ footer p, footer a {
 .meal p {
   font-weight: 300;
 }
-.meal:hover + .meal__checkbox {
-  display: flex;
+.meal:hover .meal__description {
+  transition: width 1s ease-in-out;
+  width: 60%;
+}
+.meal:hover .meal__checkbox {
+  transition: width 1s ease-in-out;
+  width: 25%;
+}
+.meal:hover .fa-circle-check {
+  transition: opacity 1s;
+  transition-delay: 500ms;
+  opacity: 1;
 }
 
 @keyframes slidein {
@@ -362,7 +374,7 @@ footer p, footer a {
 .meal__description {
   padding-left: 15px;
   box-sizing: border-box;
-  width: 60%;
+  width: 85%;
 }
 .meal__description h3, .meal__description p {
   text-overflow: ellipsis;
