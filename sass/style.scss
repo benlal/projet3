@@ -352,14 +352,15 @@ footer {
         display: flex;
     }
     animation-duration: 2s;
+    animation-fill-mode: forwards;
     animation-name: slidein;
+    opacity: 0;
 }
 
 
 @keyframes slidein {
     0% {
         translate: 0 30px;
-        opacity: 0;
     }
     100% {
         translate: 0 0;
