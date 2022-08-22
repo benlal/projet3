@@ -203,6 +203,7 @@ button {
             font-size: 24px;
             margin: 10px;
 
+
             &:hover {
                 font-weight: 900;
                 cursor: pointer;
@@ -211,6 +212,9 @@ button {
                 -webkit-background-clip: text;
                 color: transparent;
                 -webkit-text-fill-color: $gradient;
+
+                transition: opacity 2s;
+                opacity: 0, 1;
                 
             }
         }
@@ -351,16 +355,16 @@ footer {
         font-weight: 300;
     }
     &:hover .meal__description {
-        transition: width 1s ease-in-out; 
+        transition: width 500ms ease-in-out; 
         width: 60%;
     }
     &:hover .meal__checkbox {
-        transition: width 1s ease-in-out; 
+        transition: width 500ms ease-in-out; 
         width:25%; 
     }
     &:hover .fa-circle-check {
        
-        transition: opacity 1s;
+        transition: opacity 500ms;
         transition-delay: 500ms;
         opacity: 1;
     }
