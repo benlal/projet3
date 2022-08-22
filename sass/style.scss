@@ -316,7 +316,27 @@ footer {
     margin-bottom: 20px;
 }
 
+.meal__checkbox {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $color3;
+    color: white;
+    height: 85px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    .fa-circle-check {
+        font-size: 24px;
+    }
+}
+
 .meal {
+
+    // transform: translate(0, -60px);
+
+
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -333,9 +353,19 @@ footer {
     p {
         font-weight: 300;
     }
-
+    &:hover + .meal__checkbox {
+        display: flex;
+    }
+    animation-delay: 1s;
+    animation-duration: 10s;
 }
 
+
+@keyframes .meal {
+    0% {bottom: -60px}
+    100% {bottom: 0}
+
+}
 
 
 .meal__price {
@@ -358,25 +388,7 @@ footer {
     overflow: hidden;
     white-space: nowrap;
     }
-    
-
     width: 65%;
-}
-
-.meal__checkbox {
-    width: 25%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: $color3;
-    color: white;
-    height: 85px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    .fa-circle-check {
-        font-size: 24px;
-    }
-    
 }
 
 
