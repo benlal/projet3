@@ -288,6 +288,7 @@ footer p, footer a {
 
 .menu__meals {
   margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 
 .meal__checkbox {
@@ -309,6 +310,7 @@ footer p, footer a {
 .meal {
   display: flex;
   align-items: center;
+  justify-content: right;
   height: 85px;
   margin: 10px 0;
   background-color: white;
