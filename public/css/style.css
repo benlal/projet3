@@ -24,7 +24,7 @@ h1, h2 {
   font-weight: 700;
 }
 
-#reservation__content, #fonctionnement, #restaurants__content, #footer__content {
+#reservation__content, #fonctionnement, #restaurants__content, #menu__content, #footer__content {
   width: 90%;
   max-width: 1440px;
   margin: auto;
@@ -218,12 +218,9 @@ button:hover {
   font-size: 20px;
 }
 #menu__content {
-  width: 90%;
-  max-width: 1440px;
-  margin: auto;
   display: flex;
   flex-direction: column;
-  padding: 20px 0 60px;
+  padding-bottom: 60px;
 }
 #menu__content h2 {
   font-weight: 300;
