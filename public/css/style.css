@@ -49,14 +49,11 @@ header {
 .fa-arrow-left {
   position: absolute;
   left: 0;
+  font-size: 24px;
 }
 
 #logo {
   height: 30px;
-}
-
-#logo--white {
-  height: 20px;
 }
 
 #location {
@@ -194,43 +191,6 @@ button:hover {
   -webkit-text-fill-color: linear-gradient(#FF79DA, #9356DC);
   transition: opacity 2s;
   opacity: 0, 1;
-}
-
-footer {
-  background-color: #333333;
-  color: white;
-}
-footer a {
-  color: white;
-}
-footer p, footer a {
-  margin: 5px 0;
-  font-weight: 400;
-}
-
-#footer__list {
-  display: flex;
-  flex-direction: column;
-  margin-top: 10px;
-}
-
-.footer__line {
-  display: flex;
-  align-items: center;
-}
-.footer__line .fa-utensils {
-  margin-right: 15px;
-}
-.footer__line .fa-handshake-angle {
-  margin-right: 10px;
-}
-
-#logo--white {
-  filter: invert(100%);
-}
-
-.fa-arrow-left {
-  font-size: 24px;
 }
 
 #menu__figure {
@@ -418,6 +378,40 @@ footer p, footer a {
     opacity: 0;
   }
 }
+#logo--white {
+  height: 20px;
+  filter: invert(100%);
+}
+
+footer {
+  background-color: #333333;
+  color: white;
+}
+footer a {
+  color: white;
+}
+footer p, footer a {
+  margin: 5px 0;
+  font-weight: 400;
+}
+
+#footer__list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.footer__line {
+  display: flex;
+  align-items: center;
+}
+.footer__line .fa-utensils {
+  margin-right: 15px;
+}
+.footer__line .fa-handshake-angle {
+  margin-right: 10px;
+}
+
 @media screen and (min-width: 992px) {
   #fonctionnement__list {
     display: flex;

@@ -1,3 +1,5 @@
+// FONTS
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@100;300;500;700;900&display=swap');
 
 @font-face {
@@ -9,11 +11,15 @@
     font-style: normal;
 }
 
+// COULEURS
+
 $color1: #9356DC;
 $color2: #FF79DA;
 $color3: #99E2D0;
 $background-color: #f2f2f2;
 $gradient: linear-gradient($color2, $color1);
+
+// MISE EN PAGE GLOBALE
 
 body {
     margin: 0;
@@ -41,6 +47,8 @@ h1, h2 {
     padding: 20px 0;
 }
 
+// HEADER
+
 header {
     box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.3);
 }
@@ -59,15 +67,14 @@ header {
 .fa-arrow-left {
     position: absolute;
     left: 0;
+    font-size: 24px;
 }
 
 #logo {
     height: 30px;
 }
 
-#logo--white {
-    height: 20px;
-}
+// PAGE D'ACCUEIL
 
 #location {
     background-color: darken($color: $background-color, $amount: 5%);
@@ -207,43 +214,7 @@ button {
     }
 }
 
-
-footer {
-    background-color: darken($color: $background-color, $amount: 75%);
-    color: white;
-    a {
-        color: white;
-    }
-    p, a {
-        margin: 5px 0;
-        font-weight: 400;
-    }
-}
-
-#footer__list {
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-}
-
-.footer__line {
-    display: flex;
-    align-items: center;
-    .fa-utensils {
-        margin-right: 15px;
-    }
-    .fa-handshake-angle {
-        margin-right: 10px;
-    }
-}
-
-#logo--white {
-    filter: invert(100%);
-}
-
-.fa-arrow-left {
-    font-size: 24px;
-}
+// PAGE DE MENU
 
 #menu {
     &__figure {
@@ -433,6 +404,44 @@ footer {
         opacity: 0;
     }
 }
+
+// FOOTER
+
+#logo--white {
+    height: 20px;
+    filter: invert(100%);
+}
+
+footer {
+    background-color: darken($color: $background-color, $amount: 75%);
+    color: white;
+    a {
+        color: white;
+    }
+    p, a {
+        margin: 5px 0;
+        font-weight: 400;
+    }
+}
+
+#footer__list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.footer__line {
+    display: flex;
+    align-items: center;
+    .fa-utensils {
+        margin-right: 15px;
+    }
+    .fa-handshake-angle {
+        margin-right: 10px;
+    }
+}
+
+// RESPONSIVE
 
 @media screen and (min-width: 992px) {
     #fonctionnement__list {
