@@ -142,7 +142,6 @@ button {
         position: relative;
         right: 22px;
     }
-
 }
 
 .step:hover {
@@ -207,10 +206,18 @@ button {
                 -webkit-background-clip: text;
                 color: transparent;
                 -webkit-text-fill-color: $gradient;
-                transition: opacity 2s;
-                opacity: 0, 1;
+                animation: appear 2s forwards;
             }
         }
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
 
@@ -323,9 +330,7 @@ button {
         transition-delay: 500ms;
         opacity: 1;
     }
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-name: slidein;
+    animation: slidein 1s forwards;
     opacity: 0;
     &--delay1 {
         animation-delay: 1s;
@@ -352,11 +357,11 @@ button {
 
 @keyframes slidein {
     0% {
-        translate: 0 30px;
+        transform: translate(0, 30px);
     }
     100% {
-        translate: 0 0;
-        opacity: 100%;
+        transform: translate(0, 0);
+        opacity: 1;
     }
 }
 
@@ -368,11 +373,9 @@ button {
     align-items: center;
     justify-content: center;
     z-index: 2;
-    position: absolute;
-    animation-name: fadeout;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
+    animation: fadeout 2s forwards;
     opacity: 1;
+    position: fixed;
 }
 
 @keyframes fadeout {
@@ -389,7 +392,7 @@ button {
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    animation: spin 1s linear forwards;
+    animation: spin 1.2s linear forwards;
   }
 
 @keyframes spin {
