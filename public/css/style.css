@@ -254,13 +254,11 @@ button:hover {
 .meal {
   display: flex;
   align-items: center;
-  justify-content: right;
   height: 85px;
   margin: 10px 0;
   background-color: white;
   border-radius: 15px;
   box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.3);
-  transform-origin: right;
   overflow: hidden;
   animation: slidein 1s forwards;
   opacity: 0;
@@ -288,6 +286,7 @@ button:hover {
 .meal__description {
   padding-left: 15px;
   box-sizing: border-box;
+  transition: width 1s;
   width: 85%;
 }
 .meal__description h3, .meal__description p {
@@ -296,15 +295,16 @@ button:hover {
   white-space: nowrap;
 }
 .meal:hover .meal__description {
-  transition: width 500ms ease-in-out;
+  transition: width 1s;
   width: 60%;
 }
 .meal:hover .meal__checkbox {
-  transition: width 500ms ease-in-out;
-  width: 25%;
+  transform: translateX(0px);
+  transition-duration: 1s;
 }
 .meal:hover .fa-circle-check {
-  animation: rollin 1s forwards;
+  opacity: 1;
+  animation: rollin 2s forwards;
 }
 .meal--delay1 {
   animation-delay: 1s;
@@ -313,13 +313,17 @@ button:hover {
   animation-delay: 2s;
 }
 .meal__checkbox {
-  width: 0%;
+  position: absolute;
+  right: 0;
+  width: 25%;
   display: flex;
   align-items: center;
   justify-content: center;
   background: #99E2D0;
   color: white;
   height: 85px;
+  transform: translateX(125px);
+  transition-duration: 1s;
 }
 .meal__checkbox .fa-circle-check {
   font-size: 24px;
@@ -327,10 +331,10 @@ button:hover {
 
 @keyframes rollin {
   0% {
-    transform: rotate(360deg);
+    transform: rotate(0deg);
   }
   100% {
-    transform: rotate(0deg);
+    transform: rotate(360deg);
   }
 }
 @keyframes slidein {
