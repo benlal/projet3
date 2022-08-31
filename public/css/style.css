@@ -177,11 +177,12 @@ button:hover {
 .restaurant__description p {
   font-weight: 300;
 }
-.restaurant__description .fa-heart {
+
+.fa-heart {
   font-size: 24px;
   margin: 10px;
 }
-.restaurant__description .fa-heart:hover {
+.fa-heart:hover {
   font-weight: 900;
   cursor: pointer;
   background: linear-gradient(#FF79DA, #9356DC);
@@ -220,9 +221,6 @@ button:hover {
 }
 #menu__body h1 {
   font-family: shrikhandregular;
-}
-#menu__body .fa-heart {
-  font-size: 20px;
 }
 #menu__content {
   display: flex;
@@ -322,7 +320,7 @@ button:hover {
   background: #99E2D0;
   color: white;
   height: 85px;
-  transform: translateX(125px);
+  transform: translateX(115px);
   transition-duration: 1s;
 }
 .meal__checkbox .fa-circle-check {

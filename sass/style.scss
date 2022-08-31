@@ -195,20 +195,21 @@ button {
         p {
             font-weight: 300;
         }
-        .fa-heart {
-            font-size: 24px;
-            margin: 10px;
-            &:hover {
-                font-weight: 900;
-                cursor: pointer;
-                background: $gradient;
-                background-clip: text;
-                -webkit-background-clip: text;
-                color: transparent;
-                -webkit-text-fill-color: $gradient;
-                animation: appear 2s forwards;
-            }
-        }
+    }
+}
+
+.fa-heart {
+    font-size: 24px;
+    margin: 10px;
+    &:hover {
+        font-weight: 900;
+        cursor: pointer;
+        background: $gradient;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: $gradient;
+        animation: appear 2s forwards;
     }
 }
 
@@ -243,9 +244,6 @@ button {
         }
         h1 {
             font-family: shrikhandregular;
-        }
-        .fa-heart {
-            font-size: 20px;
         }
     }
     &__content {
@@ -346,7 +344,7 @@ button {
         background: $color3;
         color: white;
         height: 85px;
-        transform: translateX(125px);
+        transform: translateX(115px);
         transition-duration: 1s;
         .fa-circle-check {
             font-size: 24px;
