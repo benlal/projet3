@@ -297,7 +297,7 @@ button:hover {
   width: 60%;
 }
 .meal:hover .meal__checkbox {
-  transform: translateX(0px);
+  transform: translateX(0);
   transition-duration: 1s;
 }
 .meal:hover .fa-circle-check {
@@ -320,7 +320,7 @@ button:hover {
   background: #99E2D0;
   color: white;
   height: 85px;
-  transform: translateX(115px);
+  transform: translateX(100%);
   transition-duration: 1s;
 }
 .meal__checkbox .fa-circle-check {
@@ -337,10 +337,10 @@ button:hover {
 }
 @keyframes slidein {
   0% {
-    transform: translate(0, 30px);
+    transform: translateY(30px);
   }
   100% {
-    transform: translate(0, 0);
+    transform: translateY(0);
     opacity: 1;
   }
 }
