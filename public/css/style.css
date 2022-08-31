@@ -431,7 +431,7 @@ footer p, footer a {
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  #restaurants__list a {
+  #restaurants__list .restaurant {
     width: 48%;
   }
   .menu__meals {
