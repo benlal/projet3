@@ -304,7 +304,7 @@ button:hover {
 }
 .meal:hover .fa-circle-check {
   opacity: 1;
-  animation: rollin 2s forwards;
+  animation: rollin 1s forwards;
 }
 .meal--delay1 {
   animation-delay: 1s;
